@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "voucher",
+    "dateExported": "2023-03-01T20:08:35.994Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c4894c5f-aef2-4e21-ae5d-d6edf09e48c8",
+            "colId": "3d4faffa-4d7b-4a0f-99ca-d80b2f4d08f4",
+            "containerId": "",
+            "name": "create voucher",
+            "url": "{{dev}}/vouchers",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-01T20:04:29.228Z",
+            "modified": "2023-03-01T20:06:28.327Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"code\": \"DIDITOP\",\n  \"discount\": 50\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e067f81d-c45c-4e69-9a8b-296a036607d3",
+            "colId": "3d4faffa-4d7b-4a0f-99ca-d80b2f4d08f4",
+            "containerId": "",
+            "name": "get voucher",
+            "url": "{{dev}}/vouchers/apply",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-01T20:06:33.952Z",
+            "modified": "2023-03-01T20:07:31.860Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"code\": \"DIDITOP\",\n  \"amount\": 1000\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
