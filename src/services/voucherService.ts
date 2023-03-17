@@ -52,6 +52,10 @@ function applyDiscount(value: number, discount: number) {
 }
 
 export default {
+  MIN_VALUE_FOR_DISCOUNT,
   createVoucher,
-  applyVoucher
+  applyVoucher,
+  changeVoucherToUsed,
+  isAmountValidForDiscount,
+  applyDiscount
 }
